@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rps game</title>
+    <link rel="stylesheet" href="style.css">
+    	<!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+        <script
+        src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+      ></script>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>    
+    </div>
+    
+    <div class="result">
+        <p id="result-text"></p>
+    </div>
+    <button onclick="sendScore(userScore, computerScore, result_p.innerHTML)">Send Score</button>
+    
+    
+    <div class="choices">
+        <div class="choice" id="r" onclick="game('r')">
+            <img src="images/rock.png" alt="">
+        </div>
+    
+        <div class="choice" id="p" onclick="game('p')">
+            <img src="images/paper.png" alt="">
+        </div>
+    
+        <div class="choice" id="s" onclick="game('s')">
+            <img src="images/scissors.png" alt="">
+        </div>
+    
+    </div>
+    
+    <p id="action-msg">Make your move.</p>
+        <!-- Подключаем библиотеку ethers.js из CDN для поддержки Ethereum для JavaScript. -->
+        <script
+        src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"
+      ></script>
+      
+          <!-- Подключаем JavaScript-файл -->
+          <script src="app.js"></script>
+        </body>
+        </html>
+    

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-color: #181823;
+    }
+    
+    header {
+    background: white;
+    padding: 20px;
+    }
+    
+    header > h1 {
+    color: #181823;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    }
+    
+    .score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    }
+    
+    .badge {
+    background: #E2584D;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #user-label {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+    }
+    
+    #computer-label {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    }
+    
+    .result {
+    font-size: 40px;
+    color: white;
+    }
+    
+    .result > p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .choices {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    }
+    
+    .choice {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    }
+    
+    .choice:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .choice img {
+    max-width: 80%;
+    max-height: 80%;
+    }
+    
+    #action-msg {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    }
+    
+    .button {
+    background-color: #E2584D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 20px;
+    }
+    
+    .button:hover {
+    background-color: #F0807E;
+    }
